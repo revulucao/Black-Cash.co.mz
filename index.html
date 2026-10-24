@@ -34,13 +34,11 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
 
-/* ===== NOVO LOGÓTIPO 3D ===== */
 .brand-logo{display:inline-flex;align-items:center;gap:.5rem;line-height:1;text-decoration:none}
 .brand-logo svg{display:block;flex-shrink:0}
 .brand-logo .brand-wordmark{font-weight:900;letter-spacing:-.5px;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .brand-logo .brand-wordmark .bc-cash{color:var(--white);-webkit-text-fill-color:var(--white)}
 
-/* ===== SPLASH ===== */
 #splashScreen{position:fixed;inset:0;background:var(--grad-premium);display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:99999;transition:opacity .6s ease,transform .6s ease}
 #splashScreen.hide{opacity:0;transform:scale(1.05);pointer-events:none}
 #splashScreen .logo-splash{display:flex;flex-direction:column;align-items:center;gap:1rem}
@@ -48,16 +46,13 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 #splashScreen .loader-splash{margin-top:2rem;width:44px;height:44px;border:3px solid rgba(212,175,55,.15);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* ===== APP SHELL ===== */
 #app{display:none;height:100vh;max-height:100vh;overflow:hidden;background:var(--light);flex-direction:column}
 #app.active{display:flex}
 
-/* ===== STATUS BAR ===== */
 .status-bar{background:var(--grad-premium);padding:.5rem 1.2rem .3rem;display:flex;justify-content:space-between;color:rgba(255,255,255,.6);font-size:.6rem;font-weight:600;letter-spacing:.3px;flex-shrink:0;border-bottom:1px solid rgba(212,175,55,.15)}
 .status-bar .time{color:var(--gold-light);font-weight:700}
 .status-bar .icons{display:flex;gap:6px;font-size:.7rem;color:rgba(255,255,255,.5)}
 
-/* ===== HEADER ===== */
 .app-header{background:var(--grad-premium);padding:.8rem 1.2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,.18);flex-shrink:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 18px rgba(0,0,0,.25)}
 .app-header .logo-mini{font-size:1.15rem}
 .app-header .header-actions{display:flex;gap:.8rem;align-items:center}
@@ -68,12 +63,10 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .app-header .profile-avatar img{width:100%;height:100%;object-fit:cover}
 .app-header .profile-avatar:hover{transform:scale(1.06)}
 
-/* ===== ONLINE INDICATOR ===== */
 .online-indicator{position:absolute;bottom:1px;right:1px;width:10px;height:10px;background:var(--success);border-radius:50%;border:2px solid var(--white);box-shadow:0 1px 4px rgba(0,0,0,.2);z-index:2}
 .online-indicator.large{width:14px;height:14px;border-width:2.5px}
 .online-indicator.medium{width:12px;height:12px;border-width:2px}
 
-/* ===== BOTTOM NAV ===== */
 .bottom-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(11,11,15,.97);backdrop-filter:blur(14px);border-top:1px solid rgba(212,175,55,.20);display:flex;justify-content:space-around;padding:.45rem 0 .65rem;z-index:1000;box-shadow:0 -6px 24px rgba(0,0,0,.35);flex-shrink:0}
 .bottom-nav .nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;padding:.2rem .8rem;color:rgba(255,255,255,.45);transition:var(--transition);position:relative;font-size:.6rem;font-weight:500;font-family:'Inter',sans-serif;flex:1;max-width:72px}
 .bottom-nav .nav-item i{font-size:1.3rem;transition:var(--transition)}
@@ -83,20 +76,17 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .bottom-nav .nav-item .nav-badge{position:absolute;top:-4px;right:4px;background:var(--red-bright);color:#fff;font-size:.5rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--black)}
 .bottom-nav .nav-item .nav-label{font-size:.55rem}
 
-/* ===== PAGES ===== */
 .page{display:none;animation:fadeSlideUp .3s ease}
 .page.active{display:block}
 @keyframes fadeSlideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .app-content{flex:1;overflow-y:auto;padding:1rem 1.2rem 5rem;-webkit-overflow-scrolling:touch}
 .app-content::-webkit-scrollbar{width:0}
 
-/* ===== GREETING ===== */
 .greeting-section{margin-bottom:.6rem;display:flex;justify-content:space-between;align-items:center}
 .greeting-section .greeting-text{font-size:1.6rem;font-weight:800;line-height:1.2;color:var(--black)}
 .greeting-section .greeting-text .highlight{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .greeting-section .greeting-date{font-size:.8rem;color:var(--gray);font-weight:400;margin-top:.1rem}
 
-/* ===== ONLINE COUNTER ===== */
 .online-counter{display:flex;align-items:center;gap:.6rem;font-size:.8rem;font-weight:500;color:var(--gray);padding:.55rem .9rem;background:var(--white);border-radius:40px;margin-bottom:1rem;border:1px solid rgba(212,175,55,.25);box-shadow:var(--shadow-sm)}
 .online-counter .online-dot{width:10px;height:10px;border-radius:50%;background:var(--success);display:inline-block;animation:pulse-dot 2s infinite;flex-shrink:0}
 @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
@@ -104,7 +94,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .online-counter .counter-label{font-weight:400;font-size:.75rem}
 .online-counter .counter-icon{margin-left:auto;font-size:1.1rem;color:var(--gold);opacity:.8}
 
-/* ===== PREMIUM BANK CARD 3D ===== */
 .bank-card-premium{background:radial-gradient(circle at 85% 15%,rgba(212,175,55,.18) 0%,transparent 45%),radial-gradient(circle at 10% 90%,rgba(198,40,40,.15) 0%,transparent 45%),linear-gradient(145deg,#1E1E28 0%,#0B0B0F 60%,#15151D 100%);border-radius:22px;padding:1.5rem 1.5rem 1.7rem;color:#fff;margin-bottom:1.2rem;position:relative;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 0 1px rgba(212,175,55,.25),inset 0 1px 0 rgba(255,255,255,.10);border:1px solid rgba(212,175,55,.22);transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s ease}
 .bank-card-premium:hover{transform:translateY(-4px);box-shadow:0 28px 60px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.4),inset 0 1px 0 rgba(255,255,255,.14)}
 .bank-card-premium::before{content:'';position:absolute;top:-60%;right:-25%;width:380px;height:380px;background:radial-gradient(circle,rgba(212,175,55,.16) 0%,transparent 65%);border-radius:50%;pointer-events:none}
@@ -125,7 +114,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .bank-card-premium:hover .card-3d-element{opacity:.18}
 .bank-card-premium .card-3d-element i{display:block;transform:perspective(600px) rotateY(-14deg) rotateX(8deg)}
 
-/* ===== LIMITES ===== */
 .card-limits-outside{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.2rem}
 .card-limits-outside .limit-item{background:var(--white);border-radius:var(--radius);padding:.8rem .4rem;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(212,175,55,.15);transition:var(--transition);position:relative;overflow:hidden}
 .card-limits-outside .limit-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-gold);opacity:.7}
@@ -135,7 +123,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .card-limits-outside .limit-item .limit-value{font-size:.9rem;font-weight:800;color:var(--black);margin-top:.25rem}
 .card-limits-outside .limit-item .limit-value .highlight{color:var(--red-bright);font-weight:700}
 
-/* ===== NOVIDADE CARD ===== */
 .novacash-news-card{width:100%;padding:.9rem 1.1rem;border:none;border-radius:18px;background:radial-gradient(circle at 90% 20%,rgba(212,175,55,.25) 0%,transparent 50%),var(--grad-red);color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;transition:all .25s;box-shadow:0 8px 26px rgba(198,40,40,.4);display:flex;align-items:center;gap:.75rem;margin-bottom:1.1rem;position:relative;overflow:hidden;text-align:left;border:1px solid rgba(212,175,55,.3)}
 .novacash-news-card:hover{transform:translateY(-2px) scale(1.01);box-shadow:0 12px 34px rgba(198,40,40,.5)}
 .novacash-news-card .news-gift{font-size:1.8rem;line-height:1;animation:giftSway 2.6s ease-in-out infinite;transform-origin:center bottom;flex-shrink:0}
@@ -147,7 +134,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .novacash-news-card::after{content:'';position:absolute;top:-60%;left:-60%;width:220%;height:220%;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.14) 50%,transparent 70%);transform:rotate(25deg);animation:newsShine 4.5s ease-in-out infinite;pointer-events:none}
 @keyframes newsShine{0%,100%{transform:translateX(-100%) rotate(25deg);opacity:0}40%,60%{opacity:1}80%{transform:translateX(100%) rotate(25deg);opacity:0}}
 
-/* ===== LOAN BUTTON 3D ===== */
 .loan-btn-main{width:100%;padding:1.05rem;border:none;border-radius:16px;background:var(--grad-red);color:#fff;font-weight:800;font-size:1.05rem;cursor:pointer;transition:all .25s;box-shadow:0 8px 24px rgba(198,40,40,.4),inset 0 1px 0 rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:.4rem;position:relative;overflow:hidden;border:1px solid rgba(212,175,55,.25)}
 .loan-btn-main:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(198,40,40,.5)}
 .loan-btn-main:active{transform:translateY(0)}
@@ -156,7 +142,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .loan-btn-main i{position:relative;z-index:1}
 .loan-btn-sub{font-size:.75rem;color:var(--gray);text-align:center;margin-bottom:1rem;font-weight:500;opacity:.8}
 
-/* ===== QUICK STATS ===== */
 .quick-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.2rem}
 .quick-stat{background:var(--white);border-radius:var(--radius);padding:.8rem .4rem;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(212,175,55,.15);transition:var(--transition);position:relative;overflow:hidden}
 .quick-stat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-gold);opacity:.65}
@@ -166,7 +151,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .quick-stat .stat-value .stat-suffix{font-size:.7rem;font-weight:700;color:var(--gray)}
 .quick-stat .stat-label{font-size:.55rem;color:var(--gray);font-weight:600;line-height:1.3;margin-top:.15rem}
 
-/* ===== ACTIVITY ===== */
 .section-title{font-size:.9rem;font-weight:800;margin:1.2rem 0 .8rem;display:flex;justify-content:space-between;align-items:center;color:var(--black)}
 .section-title .see-all{font-size:.7rem;color:var(--red);font-weight:700;cursor:pointer;background:none;border:none}
 .activity-item{background:var(--white);border-radius:var(--radius);padding:.7rem 1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.8rem;box-shadow:var(--shadow-sm);border:1px solid rgba(0,0,0,.03);transition:var(--transition);cursor:default;animation:slideInActivity .4s ease;position:relative;overflow:hidden}
@@ -184,11 +168,9 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .method-chip.emola{background:rgba(255,107,0,.12);color:#FF6B00}
 .method-chip.bank{background:rgba(79,195,247,.14);color:#0288D1}
 
-/* ===== CHAT FAB ===== */
 .chat-fab{position:fixed;bottom:5.5rem;right:1.2rem;width:56px;height:56px;border-radius:50%;background:var(--grad-dark);color:var(--gold);border:1px solid rgba(212,175,55,.35);font-size:1.4rem;box-shadow:0 6px 20px rgba(0,0,0,.35);cursor:pointer;transition:var(--transition);z-index:900;display:flex;align-items:center;justify-content:center}
 .chat-fab:hover{transform:scale(1.06);box-shadow:0 10px 30px rgba(212,175,55,.4);border-color:var(--gold)}
 
-/* ===== AUDIO FAB ===== */
 .audio-fab{position:fixed;bottom:9.7rem;right:1.2rem;width:56px;height:56px;border-radius:50%;background:var(--grad-dark);color:var(--gold);border:1px solid rgba(212,175,55,.35);font-size:1.4rem;box-shadow:0 6px 20px rgba(0,0,0,.35);cursor:pointer;transition:var(--transition);z-index:899;display:flex;align-items:center;justify-content:center}
 .audio-fab:hover{transform:scale(1.06);box-shadow:0 10px 30px rgba(212,175,55,.4);border-color:var(--gold)}
 .audio-fab .audio-tooltip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--black);color:var(--gold-light);padding:.3rem .8rem;border-radius:20px;font-size:.6rem;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;font-family:'Inter',sans-serif;border:1px solid rgba(212,175,55,.3)}
@@ -198,7 +180,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 @keyframes audioPulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.5);opacity:0}}
 .audio-fab .audio-badge{position:absolute;top:-4px;right:-4px;background:var(--red-bright);color:#fff;font-size:.5rem;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--black-2)}
 
-/* ===== TOAST ===== */
 .toast-container{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:99999;display:flex;flex-direction:column;gap:.5rem;width:90%;max-width:400px;pointer-events:none}
 .toast{padding:.85rem 1rem;border-radius:var(--radius);color:#fff;font-weight:600;font-size:.85rem;box-shadow:var(--shadow-lg);animation:slideDown .3s ease;pointer-events:auto;display:flex;align-items:center;gap:.8rem;border:1px solid rgba(255,255,255,.15)}
 .toast.success{background:linear-gradient(135deg,#10B981,#059669)}
@@ -206,7 +187,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .toast.info{background:var(--grad-dark);border-color:rgba(212,175,55,.35)}
 @keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
 
-/* ===== LOGIN ===== */
 #loginScreen{position:fixed;inset:0;background:var(--black);z-index:100000;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.5rem;transition:opacity .5s ease;overflow:hidden}
 #loginScreen.hide{opacity:0;pointer-events:none}
 .login-tech-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(212,175,55,.10) 0%,transparent 55%),radial-gradient(circle at 80% 80%,rgba(198,40,40,.08) 0%,transparent 50%),linear-gradient(180deg,#0B0B0F 0%,#15151D 50%,#0B0B0F 100%);z-index:0}
@@ -255,7 +235,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .login-footer-premium{margin-top:1.8rem;text-align:center;font-size:.6rem;color:rgba(255,255,255,.25);font-weight:500;letter-spacing:.3px;display:flex;align-items:center;justify-content:center;gap:.5rem}
 .login-footer-premium i{font-size:.55rem;color:var(--gold);opacity:.7}
 
-/* ===== REGISTER ===== */
 #registerScreen{position:fixed;inset:0;background:var(--black);z-index:100001;display:none;flex-direction:column;justify-content:center;align-items:center;padding:2rem;overflow-y:auto}
 #registerScreen.active{display:flex}
 #registerScreen .register-box{background:linear-gradient(160deg,#1E1E28 0%,#0B0B0F 100%);border-radius:var(--radius-xl);padding:2rem 1.5rem;width:100%;max-width:400px;box-shadow:var(--shadow-xl);margin:auto;border:1px solid rgba(212,175,55,.25)}
@@ -266,7 +245,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 #registerScreen .form-group input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,175,55,.12)}
 #registerScreen .form-group input::placeholder{color:rgba(255,255,255,.3)}
 
-/* ===== FORM GROUP ===== */
 .form-group{margin-bottom:1rem}
 .form-group label{display:block;font-weight:700;font-size:.78rem;margin-bottom:.35rem;color:var(--black)}
 .form-group input,.form-group select,.form-group textarea{width:100%;padding:.75rem 1rem;border:1.5px solid var(--gray-light);border-radius:var(--radius);font-size:.9rem;font-family:'Inter',sans-serif;transition:var(--transition);background:var(--white);color:var(--black)}
@@ -276,7 +254,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .form-group .error-msg{color:var(--error);font-size:.7rem;font-weight:600;margin-top:.25rem;display:none}
 .form-group .error-msg.show{display:block}
 
-/* ===== BUTTONS ===== */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:var(--radius);border:none;font-weight:700;font-size:.9rem;font-family:'Inter',sans-serif;cursor:pointer;transition:var(--transition);text-decoration:none;width:100%}
 .btn-primary{background:var(--grad-red);color:#fff;box-shadow:0 6px 20px rgba(198,40,40,.35);border:1px solid rgba(212,175,55,.25)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(198,40,40,.45)}
@@ -286,7 +263,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .btn-success{background:linear-gradient(135deg,#10B981,#059669);color:#fff;box-shadow:0 6px 20px rgba(16,185,129,.35)}
 .btn-success:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(16,185,129,.45)}
 
-/* ===== FILE INPUT ===== */
 .file-input-wrapper{position:relative;overflow:hidden;display:inline-block;width:100%}
 .file-input-wrapper input[type="file"]{position:absolute;left:0;top:0;opacity:0;width:100%;height:100%;cursor:pointer}
 .file-input-wrapper .file-label{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem;border:2px dashed var(--gray-light);border-radius:var(--radius);color:var(--gray);font-weight:600;font-size:.8rem;transition:var(--transition);background:var(--light);text-align:center}
@@ -296,7 +272,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .image-preview img{width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--gold)}
 .face-preview-circle{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin-top:.5rem}
 
-/* ===== PAYMENT METHODS ===== */
 .payment-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1rem}
 .pm-item{padding:.65rem .4rem;border:2px solid var(--gray-light);border-radius:var(--radius);text-align:center;cursor:pointer;transition:var(--transition);background:var(--white);font-size:.7rem;font-weight:600;position:relative}
 .pm-item i{display:block;font-size:1.2rem;margin-bottom:.25rem;color:var(--gray)}
@@ -311,7 +286,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .pm-item.emola.active{border-color:#FF6B00;background:rgba(255,107,0,.08);box-shadow:0 0 0 3px rgba(255,107,0,.14)}
 .pm-item.bank.active{border-color:#0288D1;background:rgba(2,136,209,.08);box-shadow:0 0 0 3px rgba(2,136,209,.14)}
 
-/* ===== STEP PROGRESS ===== */
 .step-progress{display:flex;justify-content:space-between;margin-bottom:1.5rem;position:relative;padding:0 .5rem}
 .step-progress::before{content:'';position:absolute;top:13px;left:1.5rem;right:1.5rem;height:2px;background:var(--gray-light);z-index:0}
 .step-progress .step-dot{width:28px;height:28px;border-radius:50%;background:var(--gray-light);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:800;color:var(--gray);position:relative;z-index:1;transition:var(--transition);border:2px solid var(--white);cursor:default}
@@ -324,7 +298,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .step-content{display:none;animation:fadeSlideUp .3s ease}
 .step-content.active{display:block}
 
-/* ===== SIMULATOR ===== */
 .simulator-card{background:var(--white);border-radius:var(--radius-lg);padding:1.2rem;box-shadow:var(--shadow);border:1px solid rgba(212,175,55,.15);margin-bottom:1rem}
 .simulator-card h3{font-size:1rem;margin-bottom:.8rem;color:var(--black)}
 .sim-label{font-size:.7rem;color:var(--gray);font-weight:700;text-transform:uppercase;letter-spacing:.5px;display:flex;justify-content:space-between;margin-bottom:.3rem}
@@ -336,13 +309,11 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .sim-results .sim-result-item .sri-value{font-size:.85rem;font-weight:800;margin-top:.15rem;color:var(--black)}
 .sim-results .sim-result-item .sri-value.primary{color:var(--red)}
 
-/* ===== PAY BUTTON ===== */
 .pay-btn{display:block;width:100%;padding:.95rem;border:none;border-radius:60px;background:var(--grad-red);color:#fff;font-weight:800;font-size:1rem;box-shadow:0 8px 25px rgba(198,40,40,.35);cursor:pointer;transition:.2s;text-align:center;margin:.8rem 0;border:1px solid rgba(212,175,55,.25)}
 .pay-btn:hover{transform:scale(1.02);box-shadow:0 12px 34px rgba(198,40,40,.5)}
 .payment-info-text{font-size:.7rem;color:var(--gray);text-align:center;margin:-.3rem auto .8rem;opacity:.8;line-height:1.5;max-width:90%}
 .copy-btn{background:var(--grad-gold);color:var(--black);border:none;padding:.15rem .65rem;border-radius:20px;font-size:.6rem;font-weight:800;cursor:pointer}
 
-/* ===== PROFILE ===== */
 .profile-header{text-align:center;padding:1rem 0}
 .profile-header .profile-avatar-lg{width:82px;height:82px;border-radius:50%;background:var(--grad-gold);display:flex;align-items:center;justify-content:center;color:var(--black);font-size:2rem;font-weight:900;margin:0 auto .6rem;border:3px solid var(--gold-light);overflow:hidden;cursor:pointer;position:relative}
 .profile-header .profile-avatar-lg img{width:100%;height:100%;object-fit:cover}
@@ -360,7 +331,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .profile-menu .pm-item.danger{color:var(--error)}
 .profile-menu .pm-item.danger i{color:var(--error)}
 
-/* ===== NOTIFICAÇÕES ===== */
 .notif-item{background:var(--white);border-radius:var(--radius);padding:1rem 1.2rem;margin-bottom:.8rem;box-shadow:var(--shadow-sm);border-left:4px solid var(--gold);display:flex;gap:.8rem;align-items:flex-start;animation:slideInNotif .4s ease;transition:var(--transition);border-top:1px solid rgba(212,175,55,.1);border-right:1px solid rgba(212,175,55,.1);border-bottom:1px solid rgba(212,175,55,.1)}
 .notif-item:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 @keyframes slideInNotif{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
@@ -375,7 +345,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .notif-item.error{border-left-color:var(--error)}
 .notif-item.success{border-left-color:var(--success)}
 
-/* ===== HISTORY ===== */
 .history-item{background:var(--white);border-radius:var(--radius);padding:.85rem 1rem;margin-bottom:.6rem;box-shadow:var(--shadow-sm);display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(212,175,55,.12)}
 .history-item .hi-left .hi-amount{font-weight:800;font-size:.9rem;color:var(--black)}
 .history-item .hi-left .hi-date{font-size:.65rem;color:var(--gray)}
@@ -384,7 +353,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .history-item .hi-status.pending{background:rgba(212,175,55,.15);color:var(--gold-dark)}
 .history-item .hi-status.rejected{background:rgba(239,68,68,.12);color:var(--error)}
 
-/* ===== LOAN NOTIFICATION ===== */
 .loan-notification{background:var(--white);border-radius:var(--radius);padding:1.1rem 1.2rem .9rem;margin-bottom:.8rem;box-shadow:var(--shadow);border-left:4px solid var(--success);animation:slideInNotif .5s ease;transition:var(--transition);position:relative}
 .loan-notification:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 .loan-notification .notif-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
@@ -405,7 +373,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 @keyframes loanToastIn{0%{opacity:0;transform:translateY(-24px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes loanToastOut{to{opacity:0;transform:translateY(-16px) scale(.97)}}
 
-/* ===== CHAT WINDOW ===== */
 .chat-window-app{position:fixed;bottom:7rem;right:1rem;width:92%;max-width:380px;background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-xl);z-index:9999;display:none;flex-direction:column;max-height:500px;overflow:hidden;border:1px solid rgba(212,175,55,.2)}
 .chat-window-app.active{display:flex;animation:slideUp .3s ease}
 @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -433,7 +400,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .chat-faq-app .faq-chip{padding:.2rem .65rem;border-radius:20px;background:var(--light);font-size:.55rem;color:var(--gray);cursor:pointer;border:1px solid var(--gray-light);transition:var(--transition);white-space:nowrap}
 .chat-faq-app .faq-chip:hover{border-color:var(--gold);color:var(--gold-dark)}
 
-/* ===== MODAL ===== */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:99998;display:none;justify-content:center;align-items:center;padding:1.5rem}
 .modal-overlay.active{display:flex}
 .modal-content{background:var(--white);border-radius:var(--radius-xl);padding:1.5rem;max-width:400px;width:100%;animation:modalFade .3s ease;max-height:90vh;overflow-y:auto;border:1px solid rgba(212,175,55,.2)}
@@ -442,7 +408,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .modal-content .modal-header h3{font-size:1.1rem;color:var(--black)}
 .modal-content .modal-header .modal-close{background:none;border:none;font-size:1.5rem;color:var(--gray);cursor:pointer;padding:.2rem}
 
-/* ===== TERMOS ===== */
 .terms-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:99998;display:none;justify-content:center;align-items:center;padding:1.5rem}
 .terms-modal-overlay.active{display:flex}
 .terms-modal-content{background:var(--white);border-radius:var(--radius-xl);padding:1.5rem;max-width:400px;width:100%;max-height:90vh;overflow-y:auto;border:1px solid rgba(212,175,55,.2)}
@@ -450,7 +415,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .terms-modal-content p{font-size:.85rem;line-height:1.6;color:var(--gray);margin-bottom:.8rem}
 .terms-modal-content .terms-close-btn{display:block;width:100%;padding:.75rem;border:none;border-radius:60px;background:var(--grad-red);color:#fff;font-weight:800;font-size:.9rem;cursor:pointer;margin-top:.8rem;font-family:'Inter',sans-serif}
 
-/* ===== NOVIDADE MODAL ===== */
 .novacash-news-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:200000;display:none;justify-content:center;align-items:center;padding:1.5rem}
 .novacash-news-overlay.active{display:flex}
 .novacash-news-modal{background:#fff;border-radius:28px;padding:1.6rem 1.4rem 1.4rem;max-width:400px;width:100%;box-shadow:0 30px 70px rgba(0,0,0,.3);max-height:90vh;overflow-y:auto;position:relative;border:1px solid rgba(212,175,55,.25)}
@@ -469,7 +433,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .novacash-news-modal .news-confirm{display:block;width:100%;padding:.9rem;border:none;border-radius:60px;background:var(--grad-red);color:#fff;font-weight:900;font-size:1rem;cursor:pointer;box-shadow:0 6px 22px rgba(198,40,40,.35);font-family:'Inter',sans-serif;border:1px solid rgba(212,175,55,.25)}
 .novacash-news-modal .news-confirm:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,40,40,.45)}
 
-/* ===== FUNDS MODAL ===== */
 .funds-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);z-index:20000;display:none;justify-content:center;align-items:center;padding:1.5rem}
 .funds-modal-overlay.active{display:flex}
 .funds-modal{background:var(--grad-premium);border-radius:var(--radius-xl);max-width:420px;width:100%;padding:2rem;border:1px solid rgba(212,175,55,.25);box-shadow:0 30px 60px rgba(0,0,0,.6);position:relative;overflow:hidden}
@@ -489,7 +452,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .funds-last-update{color:rgba(255,255,255,.35);font-size:.6rem}
 .funds-total-label{color:rgba(255,255,255,.45);font-size:.7rem;text-transform:uppercase;letter-spacing:.5px}
 
-/* ===== REGISTER SUCCESS ===== */
 .register-success-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(12px);z-index:200000;display:none;justify-content:center;align-items:center;padding:2rem}
 .register-success-overlay.active{display:flex}
 .register-success-card{background:#fff;border-radius:var(--radius-xl);padding:2.5rem 2rem 2rem;max-width:400px;width:100%;text-align:center;box-shadow:var(--shadow-xl);position:relative;overflow:hidden;border:1px solid rgba(212,175,55,.2)}
@@ -501,7 +463,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .register-success-card .redirect-timer{font-size:.8rem;color:var(--gray);font-weight:500}
 .register-success-card .redirect-timer span{font-weight:800;color:var(--red)}
 
-/* ===== LOADING ===== */
 .loading-overlay-app{position:fixed;inset:0;background:rgba(0,0,0,.94);backdrop-filter:blur(16px);z-index:99999;display:none;justify-content:center;align-items:center;flex-direction:column;gap:1.5rem;overflow:hidden}
 .loading-overlay-app.active{display:flex}
 .loading-overlay-app .loader-spinner{width:70px;height:70px;border:4px solid rgba(212,175,55,.12);border-top-color:var(--gold);border-right-color:var(--red);border-radius:50%;animation:spin 1s cubic-bezier(.68,-.55,.27,1.55) infinite}
@@ -515,7 +476,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 @keyframes pulseDot{0%,80%,100%{transform:scale(.6);opacity:.2}40%{transform:scale(1);opacity:1}}
 .loading-overlay-app .loader-timer{color:rgba(255,255,255,.5);font-size:.9rem;font-weight:700;letter-spacing:1px;font-variant-numeric:tabular-nums}
 
-/* ===== TECH PROCESSOR ===== */
 .loading-overlay-app.tech-mode .loader-spinner,
 .loading-overlay-app.tech-mode .loader-text,
 .loading-overlay-app.tech-mode .loader-progress,
@@ -553,7 +513,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .tech-steps .tech-step.done{color:var(--success)}
 .tech-steps .tech-step.done i{background:rgba(16,185,129,.18);border-color:var(--success);color:var(--success)}
 
-/* ===== SCANNER ===== */
 .scanner-container{width:100%;max-width:400px;position:relative;margin-top:.5rem;display:none}
 .scanner-container.active{display:block}
 .scanner-container .scanner-frame{position:relative;border:2px solid var(--gold);border-radius:12px;overflow:hidden;background:#000;box-shadow:0 0 30px rgba(212,175,55,.35)}
@@ -563,7 +522,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .scanner-container .scanner-status{display:flex;justify-content:center;gap:1rem;margin-top:.5rem;color:rgba(255,255,255,.8);font-size:.7rem;opacity:.9}
 .scanner-container .scanner-status span i{margin-right:4px;color:var(--gold)}
 
-/* ===== NOTIF POPUP + ERROR MODAL ===== */
 .notif-popup{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--white);border-radius:20px;padding:1rem 1.5rem;box-shadow:0 15px 40px rgba(0,0,0,.2);z-index:9999;width:90%;max-width:400px;display:none;align-items:center;gap:12px;border-left:5px solid var(--error);animation:slideUp .3s ease}
 .notif-popup.show{display:flex}
 .notif-popup .icon{font-size:1.5rem;color:var(--error)}
@@ -590,7 +548,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .notif-popup.error-modal-improved .btn-error.secondary{background:var(--white);color:var(--red);border:2px solid var(--red)}
 .notif-popup.error-modal-improved .btn-error.secondary:hover{background:var(--red);color:#fff}
 
-/* ===== SUSPENSÃO 30 MIN ===== */
 .suspension-panel{position:fixed;inset:0;background:rgba(0,0,0,.82);backdrop-filter:blur(10px);z-index:210000;display:none;justify-content:center;align-items:center;padding:1.5rem}
 .suspension-panel.active{display:flex}
 .suspension-card{background:linear-gradient(160deg,#2A1112 0%,#0B0B0F 100%);border:2px solid rgba(239,68,68,.5);border-radius:24px;padding:1.8rem 1.5rem 1.5rem;max-width:400px;width:100%;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.7);position:relative;overflow:hidden}
@@ -605,7 +562,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .suspension-card .susp-close{background:rgba(255,255,255,.08);border:none;color:rgba(255,255,255,.7);padding:.55rem 1.4rem;border-radius:40px;font-weight:700;font-size:.8rem;cursor:pointer;margin-top:1rem;position:relative;z-index:1;font-family:'Inter',sans-serif}
 .suspension-card .susp-close:hover{background:rgba(255,255,255,.16)}
 
-/* ===== PROOF ATTEMPTS ===== */
 .proof-attempts-banner{background:linear-gradient(135deg,rgba(212,175,55,.10),rgba(198,40,40,.06));border:1px solid rgba(212,175,55,.35);border-radius:var(--radius);padding:.75rem .9rem;margin:.6rem 0;font-size:.72rem;line-height:1.5;color:#5a4a10;display:flex;gap:.5rem;align-items:flex-start}
 .proof-attempts-banner i{color:var(--gold-dark);font-size:.95rem;margin-top:.1rem;flex-shrink:0}
 .proof-attempts-banner.warning{background:linear-gradient(135deg,rgba(239,68,68,.10),rgba(198,40,40,.06));border-color:rgba(239,68,68,.4);color:#7a1a1a}
@@ -616,7 +572,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .proof-lock-msg i{font-size:1rem;flex-shrink:0}
 .proof-lock-msg .countdown{font-weight:900;font-variant-numeric:tabular-nums;font-size:.95rem}
 
-/* ===== LEMBRETE 10MIN ===== */
 .reminder-20min{position:fixed;right:1rem;top:50%;transform:translateY(-50%) translateX(140%);width:290px;max-width:calc(100vw - 2rem);background:linear-gradient(160deg,#1E1E28 0%,#0B0B0F 100%);border:1px solid rgba(212,175,55,.35);border-radius:18px;padding:1.1rem 1rem .9rem;z-index:9997;box-shadow:0 20px 50px rgba(0,0,0,.55);color:#fff;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .45s ease;opacity:0;pointer-events:none}
 .reminder-20min.show{transform:translateY(-50%) translateX(0);opacity:1;pointer-events:auto}
 .reminder-20min .rem-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
@@ -631,7 +586,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .reminder-20min .rem-btn{width:100%;padding:.7rem;border:none;border-radius:12px;background:var(--grad-red);color:#fff;font-weight:800;font-size:.82rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Inter',sans-serif;border:1px solid rgba(212,175,55,.25)}
 .reminder-20min .rem-btn:hover{transform:translateY(-2px)}
 
-/* ===== TAXA MODAL ===== */
 .taxa-section-title{font-size:1rem;font-weight:900;color:var(--black);margin-bottom:.5rem;line-height:1.35}
 .taxa-intro{font-size:.82rem;color:var(--gray);line-height:1.55;margin-bottom:.9rem}
 .taxa-box{background:#F9FAFB;border-radius:14px;padding:.85rem 1rem;margin-bottom:.75rem;border:1px solid rgba(0,0,0,.04)}
@@ -643,7 +597,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
 .taxa-esclarecimento strong{color:var(--red);font-weight:900;display:block;margin-bottom:.3rem}
 .taxa-ok-btn{display:block;width:100%;padding:.9rem;border:none;border-radius:60px;background:var(--grad-red);color:#fff;font-weight:900;font-size:.95rem;cursor:pointer;font-family:'Inter',sans-serif;margin-top:.5rem}
 
-/* ===== RESPONSIVE ===== */
 @media (max-width:480px){
   .app-content{padding:.8rem .8rem 5rem}
   .bank-card-premium .card-debt .debt-amount{font-size:1.55rem}
@@ -703,9 +656,9 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   .bank-card-premium:hover{transform:none}
 }
 </style>
-</head><body>
+</head>
+<body>
 
-<!-- ===== NOVO LOGÓTIPO 3D (SVG reutilizável) ===== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="bcGold" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -717,11 +670,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
     <linearGradient id="bcGoldDark" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#D4AF37"/>
       <stop offset="100%" stop-color="#8A6D1E"/>
-    </linearGradient>
-    <linearGradient id="bcMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".9"/>
-      <stop offset="50%" stop-color="#C8C8D0" stop-opacity=".65"/>
-      <stop offset="100%" stop-color="#6A6A78" stop-opacity=".55"/>
     </linearGradient>
     <linearGradient id="bcRed" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#E53935"/>
@@ -749,7 +697,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </symbol>
 </svg>
 
-<!-- SPLASH -->
 <div id="splashScreen">
   <div class="logo-splash">
     <div class="brand-logo">
@@ -761,11 +708,9 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   <div class="loader-splash"></div>
 </div>
 
-<!-- TOASTS -->
 <div class="toast-container" id="toastContainer"></div>
 <div class="loan-toast-stack" id="loanToastStack"></div>
 
-<!-- LOADING -->
 <div class="loading-overlay-app" id="loadingOverlayApp">
   <div class="tech-grid-bg" id="techGridBg" style="display:none;"></div>
   <div class="tech-radial" id="techRadial" style="display:none;"></div>
@@ -814,7 +759,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- REGISTER SUCCESS -->
 <div class="register-success-overlay" id="registerSuccessOverlay">
   <div class="register-success-card">
     <div class="success-icon"><i class="fas fa-check"></i></div>
@@ -825,14 +769,12 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- NOTIF POPUP -->
 <div class="notif-popup" id="notifPopup">
   <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
   <div class="text" id="popupText">ERRO NA SUA FOTO DE COMPROVATIVO</div>
   <button class="close-popup" id="popupClose">&times;</button>
 </div>
 
-<!-- PAINEL DE SUSPENSÃO 30 MIN -->
 <div class="suspension-panel" id="suspensionPanel">
   <div class="suspension-card">
     <div class="suspension-icon"><i class="fas fa-lock"></i></div>
@@ -846,7 +788,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- LOGIN -->
 <div id="loginScreen">
   <div class="login-tech-bg"></div>
   <div class="login-grid-overlay"></div>
@@ -896,7 +837,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- REGISTER -->
 <div id="registerScreen">
   <div class="register-box">
     <div class="register-logo">
@@ -920,7 +860,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- APP -->
 <div id="app">
   <div class="status-bar">
     <span class="time" id="statusTime">00:00</span>
@@ -940,7 +879,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </header>
   <main class="app-content" id="appContent">
 
-    <!-- DASHBOARD -->
     <div class="page active" id="pageDashboard">
       <div class="greeting-section">
         <div>
@@ -1026,7 +964,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
       <div id="activityList"></div>
     </div>
 
-    <!-- LOANS -->
     <div class="page" id="pageLoans">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:var(--black);">💰 Solicitar Empréstimo</h2>
       <div class="step-progress" id="stepProgress">
@@ -1036,7 +973,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
         <div class="step-dot" data-step="4"><span class="step-number">4</span><span class="step-check"><i class="fas fa-check"></i></span><span class="step-label">Confirmar</span></div>
       </div>
 
-      <!-- Step 1 -->
       <div class="step-content active" data-step="1">
         <div class="simulator-card">
           <div class="form-group"><label>Nome Completo <span style="color:var(--error);">*</span></label><input type="text" id="loanFullName" placeholder="Digite seu nome completo"><div class="error-msg">Campo obrigatório</div></div>
@@ -1090,7 +1026,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
         </div>
       </div>
 
-      <!-- Step 2 -->
       <div class="step-content" data-step="2">
         <div class="simulator-card">
           <div class="form-group"><label>Foto da Frente do BI <span style="color:var(--error);">*</span></label>
@@ -1115,7 +1050,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
         </div>
       </div>
 
-      <!-- Step 3 -->
       <div class="step-content" data-step="3">
         <div class="simulator-card">
           <div class="form-group"><label>Valor do Empréstimo <span style="color:var(--error);">*</span></label>
@@ -1139,7 +1073,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
         </div>
       </div>
 
-      <!-- Step 4 -->
       <div class="step-content" data-step="4">
         <div class="simulator-card">
           <h3>📋 Resumo do Pedido</h3>
@@ -1204,7 +1137,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
       </div>
     </div>
 
-    <!-- HISTORY -->
     <div class="page" id="pageHistory">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:var(--black);">📜 Histórico de Empréstimos</h2>
       <div id="historyList"></div>
@@ -1212,18 +1144,16 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
       <div id="myLoanHistoryContainer" style="margin-top:1rem;display:none;"></div>
     </div>
 
-    <!-- NOTIFICAÇÕES -->
     <div class="page" id="pageNotifications">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:var(--black);">🔔 Notificações</h2>
       <div id="notifList"></div>
     </div>
 
-    <!-- PROFILE -->
     <div class="page" id="pageProfile">
       <div class="profile-header">
         <div class="profile-avatar-lg" id="profileAvatar">JD<div class="avatar-overlay"><i class="fas fa-camera"></i> Alterar</div></div>
-        <div class="profile-name" id="profileName">João Domingos</div>
-        <div class="profile-phone" id="profilePhone">84 123 4567</div>
+        <div class="profile-name" id="profileName">Tiofelo luis</div>
+        <div class="profile-phone" id="profilePhone">87 636 4927</div>
       </div>
       <div class="profile-menu">
         <button class="pm-item" id="profileEditBtn"><i class="fas fa-user-edit"></i> Editar Perfil <span class="pm-arrow"><i class="fas fa-chevron-right"></i></span></button>
@@ -1274,7 +1204,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- LEMBRETE 10 MIN -->
 <div class="reminder-20min" id="reminder20min" role="dialog" aria-live="polite">
   <div class="rem-header">
     <div class="rem-icon"><i class="fas fa-hand-holding-usd"></i></div>
@@ -1288,7 +1217,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   <button class="rem-btn" id="reminderGoBtn"><i class="fas fa-arrow-right"></i> Ir para Empréstimos</button>
 </div>
 
-<!-- NOVIDADE MODAL -->
 <div class="novacash-news-overlay" id="novacashNewsOverlay" role="dialog" aria-modal="true">
   <div class="novacash-news-modal">
     <button class="novacash-news-close" id="novacashNewsClose">&times;</button>
@@ -1309,7 +1237,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- FUNDS MODAL -->
 <div class="funds-modal-overlay" id="fundsModal">
   <div class="funds-modal">
     <div class="funds-modal-header">
@@ -1327,7 +1254,6 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content">
     <div class="modal-header"><h3 id="modalTitle">Título</h3><button class="modal-close" id="modalClose">&times;</button></div>
@@ -1335,18 +1261,15 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--black);o
   </div>
 </div>
 
-<!-- TERMOS -->
 <div class="terms-modal-overlay" id="termsModalOverlay">
   <div class="terms-modal-content">
     <h3>📄 Termos e Condições</h3>
-    <p>Ao utilizar a plataforma BLACK-CASH, o cliente concorda com todos os requisitos exigidos para a solicitação de empréstimos, incluindo a utilização de um cartão Vodacom ou e-Mola ativo há mais de 2 anos e a apresentação do mesmo documento usado no registo do cartão.</p>
+    <p>Ao utilizar a plataforma BLACK-CASH, o cliente concorda com todos os requisitos exigidos para a solicitação de empréstimos, incluindo a utilização de um cartão Vodacom ou Movitel ativo há mais de 2 anos e a apresentação do mesmo documento usado no registo do cartão.</p>
     <p>O cliente é responsável pela veracidade das informações fornecidas e pelo cumprimento de todas as etapas do processo.</p>
     <p><strong>Caso o cliente não cumpra ou tenha falhado algum dos requisitos exigidos pela plataforma, poderá solicitar o reembolso do valor entrando em contacto com o número 876364927.</strong></p>
     <button class="terms-close-btn" id="termsModalClose">Fechar</button>
   </div>
-</div>
-
-<script>
+</div><script>
 document.addEventListener('DOMContentLoaded', function() {
 'use strict';
 
@@ -1364,16 +1287,18 @@ let requestedToday = 0, approvedToday = 0, approvalGap = 2;
 let onlineCount = 76;
 let isAudioPlaying = false, audioSynth = null;
 
+let _proofProcessing = false;
+let _loanSubmitting = false;
+
 const INITIAL_FUNDS_MZN = 16000000;
 const EXCHANGE_RATE = 64;
-const PROOF_ATTEMPTS_KEY = 'blackcash_proof_attempts';
-const PROOF_LOCK_KEY = 'blackcash_proof_lock_until';
 const PROOF_MAX_ATTEMPTS = 3;
 const PROOF_LOCK_MS = 30 * 60 * 1000;
 const LOAN_MIN = 5000;
 const LOAN_MAX = 100000;
+/* ALTERAÇÃO 2: Motivo de rejeição do comprovativo */
+const PROOF_REJECT_MESSAGE = 'comprovativo nao encontrado no sistema';
 
-/* ========== POPULAR SELECT IDADE ========== */
 (function() {
   const s = document.getElementById('loanAge');
   if (!s) return;
@@ -1384,17 +1309,13 @@ const LOAN_MAX = 100000;
   }
 })();
 
-/* ========== UTIL ========== */
 function formatNumber(n) { return Number(n).toLocaleString('pt-MZ'); }
-
-/* ========== TAXA (regra 499/999) ========== */
 function calcFee(amount) {
   if (amount >= 5000 && amount <= 49000) return 499;
   if (amount >= 50000 && amount <= 100000) return 999;
   return 0;
 }
 
-/* ========== SONS ========== */
 function stopAllSounds() {
   if (__sharedAudioCtx) { try { __sharedAudioCtx.close(); } catch (e) {} __sharedAudioCtx = null; }
   __soundBusyUntil = 0; __sessionActive = false;
@@ -1435,7 +1356,6 @@ function playNotificationSound() {
   } catch (e) {}
 }
 
-/* ========== TOAST ========== */
 function showToast(message, type) {
   type = type || 'info';
   const c = document.getElementById('toastContainer');
@@ -1452,7 +1372,6 @@ function showToast(message, type) {
   }, 4200);
 }
 
-/* ========== LOADING ========== */
 function showLoading(text, totalSeconds) {
   text = text || 'Processando...';
   totalSeconds = totalSeconds || 0;
@@ -1518,7 +1437,6 @@ function hideLoading() {
   stopParticles();
 }
 
-/* ========== TECH PROCESSING ========== */
 function showTechProcessing(onComplete, totalMs) {
   totalMs = totalMs || 4200;
   const overlay = document.getElementById('loadingOverlayApp');
@@ -1583,7 +1501,6 @@ function showTechProcessing(onComplete, totalMs) {
   }, 50);
 }
 
-/* ========== PARTÍCULAS ========== */
 function startParticles(canvas, ctx, w, h, src) {
   particles = [];
   for (let i = 0; i < 25; i++) {
@@ -1622,7 +1539,6 @@ function stopParticles() {
   if (c) { const ct = c.getContext('2d'); ct.clearRect(0, 0, c.width, c.height); }
 }
 
-/* ========== STATUS TIME ========== */
 function updateStatusTime() {
   const n = new Date();
   const el = document.getElementById('statusTime');
@@ -1630,7 +1546,6 @@ function updateStatusTime() {
 }
 updateStatusTime(); setInterval(updateStatusTime, 30000);
 
-/* ========== NAV ========== */
 const navItems = document.querySelectorAll('.bottom-nav .nav-item');
 function navigateTo(id) {
   document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
@@ -1639,10 +1554,11 @@ function navigateTo(id) {
   navItems.forEach(function(i) { i.classList.toggle('active', i.dataset.page === id); });
   const ac = document.getElementById('appContent');
   if (ac) ac.scrollTop = 0;
+  /* ALTERAÇÃO 3a: Atualiza contador de rejeições ao entrar no histórico */
+  if (id === 'pageHistory') renderRejectionCounter();
 }
 navItems.forEach(function(i) { i.addEventListener('click', function() { navigateTo(i.dataset.page); }); });
 
-/* ========== USERS / SESSION ========== */
 try { users = JSON.parse(localStorage.getItem('blackcash_users')) || []; } catch (e) { users = []; }
 if (!Array.isArray(users)) users = [];
 function saveUsers() { try { localStorage.setItem('blackcash_users', JSON.stringify(users)); } catch (e) {} }
@@ -1661,7 +1577,6 @@ if (savedSession) {
   }
 }
 
-/* ========== FUNDOS ========== */
 const savedFunds = localStorage.getItem('blackcash_funds_mzn');
 if (savedFunds) availableFundsMZN = parseInt(savedFunds) || INITIAL_FUNDS_MZN;
 
@@ -1716,7 +1631,6 @@ function deductFunds(amount) {
   }
 }
 
-/* ========== DADOS ALEATÓRIOS ========== */
 const firstNames = ['João','Carla','Ernesto','Marta','António','Filomena','Carlos','Ana','Paulo','Rosa','José','Lúcia','Manuel','Isabel','Fernando','Santos','Orlando','Ermelinda','Sofia','Miguel','Rita','Armando','Teresa','Janete','Romeu','Fátima','Casimiro','Márcia','Valter','Lídia'];
 const lastNames = ['Matola','Mucavele','Macamo','Chongo','Sitoe','Langa','Nhaca','Munguambe','Chicava','Zandamela','Mulungo','Manjate','Cossa','Nhantumbo','Macuácua','Chissano','Raimundo','Mahumane','Mondlane','Cuambe','Chauque','Machel','Mabunda','Uamusse','Bila','Cumbane','José'];
 const loanAmounts = [5000,7500,10000,15000,25000,30000,45000,50000,75000,100000];
@@ -1735,7 +1649,6 @@ function fmtDateLong(d) { return String(d.getDate()).padStart(2, '0') + '/' + St
 function fmtDateOnly(d) { return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0') + '/' + d.getFullYear(); }
 function fmtTimeOnly(d) { return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') + ':' + String(d.getSeconds()).padStart(2, '0'); }
 
-/* ========== NOTIFICAÇÕES PROFISSIONAIS DE RECEBIMENTO ========== */
 function generateRandomNotification() {
   const method = methods[Math.floor(Math.random() * methods.length)];
   const now = new Date();
@@ -1800,7 +1713,6 @@ function generateRandomNotification() {
   return { name: name, amount: amount, fee: fee, method: method, methodLabel: methodLabel, timestamp: now, html: html };
 }
 
-/* ========== ATIVIDADE ========== */
 function activityMethodMeta(m) {
   if (m === 'mpesa') return { chip: 'mpesa', label: 'M-Pesa', icon: 'fa-wallet', color: '#E53935' };
   if (m === 'emola') return { chip: 'emola', label: 'E-Mola', icon: 'fa-mobile-alt', color: '#FF6B00' };
@@ -1865,7 +1777,6 @@ function showLoanNotification() {
   bumpLoanStats();
 }
 
-/* ========== STATS ========== */
 function todayKey() { const d = new Date(); return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
 function persistLoanStats() { try { localStorage.setItem('blackcash_stats', JSON.stringify({ day: todayKey(), requested: requestedToday, gap: approvalGap })); } catch (e) {} }
 function initLoanStats() {
@@ -1910,7 +1821,6 @@ setInterval(function() {
   if (!s || s.day !== todayKey()) initLoanStats();
 }, 60000);
 
-/* ========== AGENDAR NOTIFICAÇÕES ========== */
 function scheduleNextNotification() {
   const delay = Math.floor(Math.random() * 15000) + 20000;
   setTimeout(function() { showLoanNotification(); scheduleNextNotification(); }, delay);
@@ -1930,7 +1840,6 @@ generateInitialActivities();
 initLoanStats();
 scheduleNextNotification();
 
-/* ========== ONLINE COUNTER ========== */
 setInterval(function() {
   const d = Math.floor(Math.random() * 3) + 4;
   const dir = Math.random() < 0.5 ? 1 : -1;
@@ -1942,7 +1851,7 @@ setInterval(function() {
   if (o) o.textContent = onlineCount;
 }, 15000);
 
-/* ========== LOGIN ========== */
+/* ===== LOGIN ===== */
 document.getElementById('loginFormApp').addEventListener('submit', function(e) {
   e.preventDefault();
   const name = document.getElementById('loginNameApp').value.trim();
@@ -1992,8 +1901,11 @@ document.getElementById('loginFormApp').addEventListener('submit', function(e) {
     scheduleReminder10min();
     refreshProofAttemptsUI();
     checkAndShowSuspension();
+    renderRejectionCounter();
   }, 6000);
-});/* ========== REGISTER ========== */
+});
+
+/* ========== REGISTER ========== */
 document.getElementById('registerFormApp').addEventListener('submit', function(e) {
   e.preventDefault();
   const fullName = document.getElementById('regNameApp').value.trim();
@@ -2112,6 +2024,8 @@ function updateDashboard(user) {
   __sessionActive = true;
   initCardStatus(user);
   refreshProofAttemptsUI();
+  /* ALTERAÇÃO 3c: Atualiza contador de rejeições no dashboard */
+  renderRejectionCounter();
 }
 
 /* ========== AVATARES ========== */
@@ -2282,17 +2196,53 @@ function updateHistory() {
     return;
   }
   c.innerHTML = '';
+  const statusMap = {
+    pending:  '<span class="hi-status pending">Em análise</span>',
+    approved: '<span class="hi-status approved">Aprovado</span>',
+    rejected: '<span class="hi-status rejected">Rejeitado</span>'
+  };
   currentUser.loans.slice().reverse().forEach(function(loan) {
     const div = document.createElement('div');
     div.className = 'history-item';
-    const statusMap = { pending: '<span class="hi-status pending">Em análise</span>', approved: '<span class="hi-status approved">Aprovado</span>', rejected: '<span class="hi-status rejected">Recusado</span>' };
     const date = new Date(loan.date);
-    div.innerHTML = '<div class="hi-left"><div class="hi-amount">' + loan.amount.toLocaleString('pt-MZ') + ' MZN</div><div class="hi-date">' + date.toLocaleDateString('pt-MZ') + ' • ' + loan.term + ' meses</div></div>' + (statusMap[loan.status] || '<span class="hi-status pending">Em análise</span>');
+    const feeInfo = loan.fee ? (' • Taxa: ' + loan.fee.toLocaleString('pt-MZ') + ' MT') : '';
+    div.innerHTML = '<div class="hi-left"><div class="hi-amount">' + loan.amount.toLocaleString('pt-MZ') + ' MZN</div><div class="hi-date">' + date.toLocaleDateString('pt-MZ') + ' • ' + loan.term + ' meses' + feeInfo + '</div></div>' + (statusMap[loan.status] || statusMap.pending);
     c.appendChild(div);
   });
 }
 
+/* ========== ALTERAÇÃO 3: CONTADOR DE REJEIÇÕES ========== */
+/* Derivado diretamente do histórico (currentUser.loans com status 'rejected').
+   Não mantém contador paralelo — evita dessincronização. */
+function getRejectionCount() {
+  if (!currentUser || !currentUser.loans) return 0;
+  return currentUser.loans.filter(function(l) { return l.status === 'rejected'; }).length;
+}
+function renderRejectionCounter() {
+  const page = document.getElementById('pageHistory');
+  if (!page) return;
+  const count = getRejectionCount();
+  let el = document.getElementById('rejectionCounterCard');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'rejectionCounterCard';
+    el.className = 'history-item';
+    el.style.cssText = 'border-left:4px solid var(--error);background:#FEF2F2;justify-content:space-between;';
+    const anchor = document.getElementById('historyList');
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(el, anchor);
+  }
+  el.innerHTML =
+    '<div class="hi-left">' +
+      '<div class="hi-amount" style="color:var(--error);display:flex;align-items:center;gap:.5rem;">' +
+        '<i class="fas fa-exclamation-circle"></i> Rejeições de empréstimos' +
+      '</div>' +
+      '<div class="hi-date">Total de comprovativos rejeitados neste histórico</div>' +
+    '</div>' +
+    '<div style="font-size:1.6rem;font-weight:900;color:var(--error);min-width:36px;text-align:center;">' + count + '</div>';
+}
+
 /* ========== NOTIFICAÇÕES ========== */
+/* Regra existente de 24h (oneDay) mantida integralmente. */
 function expireOldNotifications(user) {
   if (!user || !user.notifs || user.notifs.length === 0) return;
   const now = Date.now(), oneDay = 24 * 60 * 60 * 1000;
@@ -2316,7 +2266,7 @@ function updateNotifications() {
       n.title.indexOf('avaliação') !== -1 || n.title.indexOf('solicitação') !== -1 ||
       n.title.indexOf('Erro') !== -1 || n.title.indexOf('Lembrete') !== -1 ||
       n.title.indexOf('Envio') !== -1 || n.title.indexOf('bloqueado') !== -1 ||
-      n.title.indexOf('suspens') !== -1
+      n.title.indexOf('suspens') !== -1 || n.title.indexOf('rejeit') !== -1
     );
   });
   if (filtered.length === 0) {
@@ -2422,11 +2372,7 @@ document.querySelectorAll('.faq-chip').forEach(function(chip) {
   });
 });
 
-/* ====================================================================
-   MODAL "SAIBA MAIS" — "POR QUE PAGAR A TAXA DE INSCRIÇÃO?"
-   Conteúdo mantido do original + NOVO ESCLARECIMENTO obrigatório
-   acrescentado conforme prompt (sem eliminar informação anterior).
-   ==================================================================== */
+/* ========== MODAL TAXA EXPLICAÇÃO ========== */
 function showTaxaExplanationModal() {
   const ex = document.getElementById('taxaExplanationOverlay');
   if (ex) ex.remove();
@@ -2456,7 +2402,6 @@ function showTaxaExplanationModal() {
       '</ul>' +
     '</div>' +
     '<p class="taxa-intro" style="font-size:.8rem;">O valor aplicável deve ser apresentado ao cliente antes de qualquer pagamento e deve corresponder ao montante do empréstimo que pretende solicitar.</p>' +
-    /* ===== NOVO ESCLARECIMENTO OBRIGATÓRIO (acrescentado pelo prompt) ===== */
     '<div class="taxa-esclarecimento">' +
       '<strong>⚠️ Importante</strong>' +
       'O valor da taxa de inscrição é <strong>independente do valor do empréstimo solicitado</strong>. ' +
@@ -2505,11 +2450,17 @@ document.getElementById('myLoanHistoryBtn').addEventListener('click', function()
     return;
   }
   c.style.display = 'block';
+  const statusMap = {
+    pending:  '<span class="hi-status pending">Em análise</span>',
+    approved: '<span class="hi-status approved">Aprovado</span>',
+    rejected: '<span class="hi-status rejected">Rejeitado</span>'
+  };
   let html = '<div style="max-height:400px;overflow-y:auto;">';
   loans.slice().reverse().forEach(function(loan) {
-    const statusMap = { pending: '<span class="hi-status pending">Em análise</span>', approved: '<span class="hi-status approved">Aprovado</span>', rejected: '<span class="hi-status rejected">Recusado</span>' };
     const date = new Date(loan.date);
-    html += '<div class="history-item" style="margin-bottom:0.6rem;"><div class="hi-left"><div class="hi-amount">' + loan.amount.toLocaleString('pt-MZ') + ' MZN</div><div class="hi-date">' + date.toLocaleDateString('pt-MZ') + ' • ' + loan.term + ' meses</div></div>' + (statusMap[loan.status] || '<span class="hi-status pending">Em análise</span>') + '</div>';
+    const feeInfo = loan.fee ? (' • Taxa: ' + loan.fee.toLocaleString('pt-MZ') + ' MT') : '';
+    const reasonInfo = loan.rejectionReason ? '<div style="font-size:.6rem;color:var(--error);margin-top:.2rem;">Motivo: ' + loan.rejectionReason + '</div>' : '';
+    html += '<div class="history-item" style="margin-bottom:0.6rem;"><div class="hi-left"><div class="hi-amount">' + loan.amount.toLocaleString('pt-MZ') + ' MZN</div><div class="hi-date">' + date.toLocaleDateString('pt-MZ') + ' • ' + loan.term + ' meses' + feeInfo + '</div>' + reasonInfo + '</div>' + (statusMap[loan.status] || statusMap.pending) + '</div>';
   });
   html += '</div>';
   c.innerHTML = html;
@@ -2609,16 +2560,40 @@ document.addEventListener('keydown', function(e) {
   o.addEventListener('click', function(e) { if (e.target === o) close(); });
 })();
 
-/* ============================================================
-   SISTEMA 3 TENTATIVAS / BLOQUEIO 30 MIN
-   (preservado da versão antiga — apenas o conteúdo textual do
-   alerta final é substituído pela NOVA mensagem do prompt)
-   ============================================================ */
-function getProofAttempts() { const r = localStorage.getItem(PROOF_ATTEMPTS_KEY); const n = parseInt(r || '0', 10); return isNaN(n) ? 0 : n; }
-function setProofAttempts(n) { try { localStorage.setItem(PROOF_ATTEMPTS_KEY, String(Math.max(0, Math.min(PROOF_MAX_ATTEMPTS, n)))); } catch (e) {} }
-function getProofLockUntil() { const r = localStorage.getItem(PROOF_LOCK_KEY); const n = parseInt(r || '0', 10); return isNaN(n) ? 0 : n; }
-function setProofLockUntil(ts) { try { if (ts <= 0) localStorage.removeItem(PROOF_LOCK_KEY); else localStorage.setItem(PROOF_LOCK_KEY, String(ts)); } catch (e) {} }
-function isProofLocked() { return Date.now() < getProofLockUntil(); }
+/* ====================================================================
+   SISTEMA DE TENTATIVAS E BLOQUEIO 30 MIN — ISOLADO POR CLIENTE
+   ==================================================================== */
+function _proofKeySuffix() {
+  if (currentUser && currentUser.phone) return ':' + currentUser.phone;
+  return ':anon';
+}
+function getProofAttempts() {
+  try {
+    const r = localStorage.getItem('blackcash_proof_attempts' + _proofKeySuffix());
+    const n = parseInt(r || '0', 10);
+    return isNaN(n) ? 0 : Math.max(0, Math.min(PROOF_MAX_ATTEMPTS, n));
+  } catch (e) { return 0; }
+}
+function setProofAttempts(n) {
+  try { localStorage.setItem('blackcash_proof_attempts' + _proofKeySuffix(), String(Math.max(0, Math.min(PROOF_MAX_ATTEMPTS, n)))); } catch (e) {}
+}
+function getProofLockUntil() {
+  try {
+    const r = localStorage.getItem('blackcash_proof_lock_until' + _proofKeySuffix());
+    const n = parseInt(r || '0', 10);
+    return isNaN(n) ? 0 : n;
+  } catch (e) { return 0; }
+}
+function setProofLockUntil(ts) {
+  try {
+    if (ts <= 0) localStorage.removeItem('blackcash_proof_lock_until' + _proofKeySuffix());
+    else localStorage.setItem('blackcash_proof_lock_until' + _proofKeySuffix(), String(ts));
+  } catch (e) {}
+}
+function isProofLocked() {
+  if (!currentUser) return false;
+  return Date.now() < getProofLockUntil();
+}
 function getRemainingLockMs() { return Math.max(0, getProofLockUntil() - Date.now()); }
 
 function refreshProofAttemptsUI() {
@@ -2694,17 +2669,57 @@ startProofLockTicker();
 setInterval(refreshProofAttemptsUI, 2000);
 checkAndShowSuspension();
 
-/* Chamado SOMENTE quando o comprovativo é efetivamente rejeitado pelo processo de validação */
-function registerFailedProofAttempt() {
+/* ====================================================================
+   REGISTA UMA TENTATIVA FALHADA
+   • Incrementa contador
+   • Cria entrada de histórico com status 'rejected' (vermelho)
+   • Se atingir 3, bloqueia 30 min
+   • Notificação com 24h (addNotif já garante a retenção)
+   • Atualiza contador visual de rejeições
+   ==================================================================== */
+function registerFailedProofAttempt(reason) {
+  if (!currentUser) return;
   const current = getProofAttempts();
+  if (current >= PROOF_MAX_ATTEMPTS) return;
   const next = current + 1;
   setProofAttempts(next);
+
+  const amount = parseInt(simAmount.value, 10) || LOAN_MIN;
+  const term = parseInt(simTerm.value, 10) || 6;
+  const methodEl = document.querySelector('.pm-item.active');
+  const method = methodEl ? methodEl.dataset.method : 'M-Pesa';
+  const receiverEl = document.getElementById('loanReceiver');
+  const receiver = receiverEl ? receiverEl.value : '';
+  const fee = calcFee(amount);
+
+  const loanEntry = {
+    amount: amount,
+    term: term,
+    method: method,
+    receiver: receiver,
+    fee: fee,
+    status: 'rejected',
+    rejectionReason: reason || PROOF_REJECT_MESSAGE,
+    date: new Date().toISOString(),
+    attemptsAtRejection: next
+  };
+  if (!currentUser.loans) currentUser.loans = [];
+  currentUser.loans.unshift(loanEntry);
+
   if (next >= PROOF_MAX_ATTEMPTS) {
     setProofLockUntil(Date.now() + PROOF_LOCK_MS);
-    if (currentUser) addNotif(currentUser, '🔒 Envio bloqueado', 'Atingiu o limite de 3 tentativas consecutivas. Envio bloqueado por 30 minutos.', 'error', 'fa-lock');
+    addNotif(currentUser, '🔒 Envio bloqueado', 'Atingiu o limite de 3 tentativas consecutivas. Envio bloqueado por 30 minutos.', 'error', 'fa-lock');
     showToast('Limite de tentativas atingido. Bloqueado por 30 minutos.', 'error');
     openSuspensionPanel();
   }
+
+  const i = users.findIndex(function(u) { return u.phone === currentUser.phone; });
+  if (i !== -1) users[i] = currentUser;
+  saveUsers();
+  sessionStorage.setItem('blackcash_session', JSON.stringify(currentUser));
+  updateHistory();
+  /* ALTERAÇÃO 3b: Atualiza contador após cada rejeição */
+  renderRejectionCounter();
   refreshProofAttemptsUI();
 }
 
@@ -2937,92 +2952,7 @@ document.getElementById('payFeeBtn').addEventListener('click', function() {
 });
 
 /* ====================================================================
-   ANÁLISE DO COMPROVATIVO (preservada da versão antiga)
-   ==================================================================== */
-function analyzeProofImage(imageDataURL) {
-  return new Promise(function(resolve) {
-    const img = new Image();
-    img.onload = function() {
-      const w = img.naturalWidth || img.width;
-      const h = img.naturalHeight || img.height;
-      if (w < 200 || h < 150) {
-        return resolve({ valid: false, reason: 'A imagem é demasiado pequena para ser analisada (mínimo 200×150 px).' });
-      }
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      canvas.width = w; canvas.height = h;
-      ctx.drawImage(img, 0, 0, w, h);
-      let pixelData;
-      try { pixelData = ctx.getImageData(0, 0, w, h); }
-      catch (e) { return resolve({ valid: false, reason: 'Não foi possível ler os dados da imagem (possível bloqueio CORS).' }); }
-      const data = pixelData.data;
-      const totalPixels = w * h;
-
-      let sumLum = 0, nonWhite = 0, nonBlack = 0;
-      for (let i = 0; i < data.length; i += 16) {
-        const r = data[i], g = data[i+1], b = data[i+2];
-        const lum = 0.299*r + 0.587*g + 0.114*b;
-        sumLum += lum;
-        if (lum < 245) nonWhite++;
-        if (lum > 12) nonBlack++;
-      }
-      const sampled = Math.floor(data.length / 16);
-      const avgLum = sumLum / sampled;
-      const nonWhiteRatio = nonWhite / sampled;
-      const nonBlackRatio = nonBlack / sampled;
-      if (nonWhiteRatio < 0.02) return resolve({ valid: false, reason: 'A imagem parece estar em branco ou quase branca.' });
-      if (nonBlackRatio < 0.02) return resolve({ valid: false, reason: 'A imagem parece estar totalmente escura.' });
-      if (avgLum < 8 || avgLum > 250) return resolve({ valid: false, reason: 'A luminosidade da imagem está fora dos parâmetros analisáveis.' });
-
-      const cols = 4, rows = 4;
-      const cellW = Math.floor(w / cols), cellH = Math.floor(h / rows);
-      let emptyCells = 0;
-      for (let ry = 0; ry < rows; ry++) {
-        for (let rx = 0; rx < cols; rx++) {
-          const sx = rx * cellW, sy = ry * cellH;
-          let cSum = 0, cN = 0, cSumSq = 0;
-          for (let y = sy; y < sy + cellH; y += 6) {
-            for (let x = sx; x < sx + cellW; x += 6) {
-              const idx = (y * w + x) * 4;
-              const lum = 0.299*data[idx] + 0.587*data[idx+1] + 0.114*data[idx+2];
-              cSum += lum; cSumSq += lum*lum; cN++;
-            }
-          }
-          const mean = cN ? cSum / cN : 0;
-          const variance = cN ? (cSumSq / cN) - (mean * mean) : 0;
-          if (variance < 15) emptyCells++;
-        }
-      }
-      if (emptyCells >= 10) {
-        return resolve({ valid: false, reason: 'A análise por grelha indica que a imagem não contém os campos visíveis esperados num comprovativo (texto, valor, data, destinatário).' });
-      }
-
-      let hash = 0;
-      for (let i = 0; i < data.length; i += 4000) {
-        hash = ((hash << 5) - hash + data[i]) | 0;
-      }
-      let seen = [];
-      try { seen = JSON.parse(localStorage.getItem('blackcash_proof_hashes') || '[]'); } catch (e) {}
-      if (seen.indexOf(hash) !== -1) {
-        return resolve({ valid: false, reason: 'Esta imagem já foi submetida anteriormente. Envie um comprovativo novo e diferente.' });
-      }
-      seen.push(hash);
-      if (seen.length > 20) seen = seen.slice(-20);
-      try { localStorage.setItem('blackcash_proof_hashes', JSON.stringify(seen)); } catch (e) {}
-
-      resolve({ valid: true, reason: null, w: w, h: h });
-    };
-    img.onerror = function() { resolve({ valid: false, reason: 'Não foi possível decodificar a imagem. Tente JPG ou PNG.' }); };
-    img.src = imageDataURL;
-  });
-}
-
-/* ====================================================================
-   POPUP DE ERRO — NOVA MENSAGEM CONFORME PROMPT
-   Mantém estrutura visual do sistema antigo. Apresenta:
-   - Nome verdadeiro do cliente autenticado
-   - Valor correto da taxa (499/999 conforme empréstimo)
-   - Dados de pagamento preservados
+   POPUP DE ERRO — reutilizado para qualquer rejeição de comprovativo.
    ==================================================================== */
 function showErrorPopupWithButtons(message, opts) {
   opts = opts || {};
@@ -3032,9 +2962,8 @@ function showErrorPopupWithButtons(message, opts) {
   const amount = opts.amount || parseInt(simAmount.value, 10) || LOAN_MIN;
   const fee = opts.fee || calcFee(amount);
   const attemptNumber = opts.attempt !== undefined ? opts.attempt : getProofAttempts();
-  const reason = opts.reason || 'Não foi possível validar o comprovativo enviado.';
+  const reason = opts.reason || message || PROOF_REJECT_MESSAGE;
 
-  /* ===== MENSAGEM EXATA SOLICITADA NO PROMPT ===== */
   popup.innerHTML =
     '<button class="close-popup" id="popupClose" aria-label="Fechar">&times;</button>' +
     '<div class="error-modal-header">' +
@@ -3046,6 +2975,9 @@ function showErrorPopupWithButtons(message, opts) {
       '<p class="error-modal-message">' +
         'Senhor(a) <strong>' + clientName + '</strong>, não foi possível validar a imagem do comprovativo de pagamento da taxa de inscrição.' +
       '</p>' +
+      '<div class="erro-destaque" style="margin-top:.6rem;">' +
+        '<strong>Motivo:</strong> ' + reason +
+      '</div>' +
       '<p class="error-modal-message" style="margin-top:.55rem;">' +
         'Por favor, verifique a imagem e volte a tentar novamente.' +
       '</p>' +
@@ -3076,7 +3008,6 @@ function showErrorPopupWithButtons(message, opts) {
     if (!ex) return;
     ex.style.display = (ex.style.display === 'none' || !ex.style.display) ? 'flex' : 'none';
   });
-  /* "Por que pagar a taxa de inscrição?" abre a secção Saiba Mais com o novo esclarecimento */
   document.getElementById('errorBtnPorque').addEventListener('click', function() { close(); showTaxaExplanationModal(); });
   document.getElementById('errorBtnNaoAprovado').addEventListener('click', function() {
     close();
@@ -3090,9 +3021,12 @@ function showErrorPopupWithButtons(message, opts) {
   });
 }
 
-/* ========== SUBMETER EMPRÉSTIMO ========== */
+/* ====================================================================
+   SUBMETER EMPRÉSTIMO — guarda de reentrância + validações.
+   ==================================================================== */
 document.getElementById('submitLoanApp').addEventListener('click', async function(e) {
   e.preventDefault();
+  if (_loanSubmitting || _proofProcessing) return;
   if (this.disabled) return;
   if (isProofLocked()) {
     showToast('Envio bloqueado. Aguarde 30 minutos.', 'error');
@@ -3110,15 +3044,9 @@ document.getElementById('submitLoanApp').addEventListener('click', async functio
 
   const btn = this;
   const orig = btn.innerHTML;
+  _loanSubmitting = true;
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> A processar...';
-
-  const gt = setTimeout(function() {
-    btn.disabled = false;
-    btn.innerHTML = orig;
-    showToast('Tempo limite excedido. Tente novamente.', 'error');
-    hideLoading();
-  }, 90000);
 
   try {
     const faceFile = document.getElementById('loanFacePhoto').files[0];
@@ -3131,7 +3059,7 @@ document.getElementById('submitLoanApp').addEventListener('click', async functio
           processProfileImage(faceFile, 800, 800, 0.8, 25000),
           new Promise(function(_, rej) { setTimeout(function() { rej(new Error('Timeout')); }, 25000); })
         ]);
-      } catch (e) {
+      } catch (err) {
         faceDataURL = await new Promise(function(res, rej) {
           const r = new FileReader();
           r.onload = function(ev) { res(ev.target.result); };
@@ -3150,35 +3078,49 @@ document.getElementById('submitLoanApp').addEventListener('click', async functio
     }
 
     await submitLoanWithProof(proofFile, amount);
-    clearTimeout(gt);
     btn.disabled = false;
     btn.innerHTML = orig;
   } catch (err) {
-    clearTimeout(gt);
     btn.disabled = false;
     btn.innerHTML = orig;
     hideLoading();
+  } finally {
+    _loanSubmitting = false;
   }
 });
 
 /* ====================================================================
-   PROCESSAMENTO DO COMPROVATIVO (preservado da versão antiga)
-   - Lê a imagem
-   - Executa análise (analyzeProofImage)
-   - Se válida → solicitação registada como pendente
-   - Se inválida → registar tentativa + popup com NOVA mensagem
-   - Erros técnicos NÃO contam como tentativa
+   PROCESSAMENTO DO COMPROVATIVO — REJEIÇÃO OBRIGATÓRIA DE 100%
+
+   Cada submissão gera:
+     1) 1 tentativa (registerFailedProofAttempt)
+     2) 1 registo no histórico com status 'rejected'
+     3) 1 notificação de erro com 24h (addNotif)
+     4) 1 popup de erro
+     5) Atualização do contador visual
    ==================================================================== */
 function submitLoanWithProof(proofFile, amount) {
   return new Promise(function(resolve, reject) {
+    if (_proofProcessing) { reject(new Error('Processamento em curso.')); return; }
     if (!proofFile) { reject(new Error('Nenhum comprovativo fornecido.')); return; }
+    if (isProofLocked()) {
+      openSuspensionPanel();
+      reject(new Error('Envio bloqueado por 30 minutos.'));
+      return;
+    }
+
+    _proofProcessing = true;
 
     const totalSeconds = 15;
     const loading = showLoading('A validar comprovativo...', totalSeconds);
     let scannerShown = false;
     let proofImageData = null;
+    let finished = false;
 
     const hardTimeout = setTimeout(function() {
+      if (finished) return;
+      finished = true;
+      _proofProcessing = false;
       loading.hide();
       reject(new Error('Tempo limite excedido ao processar o comprovativo. Não foi contabilizada tentativa.'));
     }, 45000);
@@ -3198,92 +3140,53 @@ function submitLoanWithProof(proofFile, amount) {
         }
         if (pct >= 100) {
           clearInterval(int);
-          clearTimeout(hardTimeout);
-          analyzeProofImage(proofImageData).then(function(result) {
-            setTimeout(function() {
-              loading.hide();
-              if (result.valid) {
-                finalizeLoanRequest(amount, result);
-                resolve({ ok: true });
-              } else {
-                registerFailedProofAttempt();
-                const attemptNumber = getProofAttempts();
-                const fee = calcFee(amount);
-                const clientName = currentUser ? currentUser.fullName : 'Cliente';
-                if (currentUser) {
-                  const now = new Date();
-                  const fd = String(now.getDate()).padStart(2, '0') + '/' + String(now.getMonth() + 1).padStart(2, '0') + '/' + now.getFullYear() + ' às ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
-                  addNotif(
-                    currentUser,
-                    '❌ Erro na imagem do comprovativo',
-                    'Senhor(a) ' + clientName + ', não foi possível validar a imagem do comprovativo. Motivo: ' + result.reason + ' Valor da taxa: ' + fee.toLocaleString('pt-MZ') + ' MT. Dados: 876364927, nome: TIOFELO EDSON LUIS JAIELA. Tentativa ' + attemptNumber + '/' + PROOF_MAX_ATTEMPTS + '. Data: ' + fd,
-                    'error',
-                    'fa-exclamation-triangle'
-                  );
-                }
-                showErrorPopupWithButtons(
-                  'Não foi possível validar a imagem do comprovativo de pagamento da taxa de inscrição.',
-                  { amount: amount, fee: fee, attempt: attemptNumber, reason: result.reason }
-                );
-                if (attemptNumber >= PROOF_MAX_ATTEMPTS) {
-                  setTimeout(function() { openSuspensionPanel(); }, 600);
-                }
-                reject(new Error(result.reason || 'Comprovativo inválido.'));
-              }
-            }, 400);
-          }).catch(function(err) {
+          setTimeout(function() {
+            if (finished) { _proofProcessing = false; return; }
+            finished = true;
+            clearTimeout(hardTimeout);
             loading.hide();
-            reject(new Error('Erro ao analisar o comprovativo: ' + (err && err.message ? err.message : 'desconhecido') + '. Não foi contabilizada tentativa.'));
-          });
+
+            /* REJEIÇÃO OBRIGATÓRIA — nenhum caminho aprova */
+            const reason = PROOF_REJECT_MESSAGE;
+            registerFailedProofAttempt(reason);
+
+            const attemptNumber = getProofAttempts();
+            const fee = calcFee(amount);
+            const clientName = currentUser ? currentUser.fullName : 'Cliente';
+            if (currentUser) {
+              const now = new Date();
+              const fd = String(now.getDate()).padStart(2, '0') + '/' + String(now.getMonth() + 1).padStart(2, '0') + '/' + now.getFullYear() + ' às ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+              addNotif(
+                currentUser,
+                '❌ Erro na imagem do comprovativo',
+                'Senhor(a) ' + clientName + ', não foi possível validar a imagem do comprovativo. Motivo: ' + reason + ' Valor da taxa: ' + fee.toLocaleString('pt-MZ') + ' MT. Dados: 876364927, nome: TIOFELO EDSON LUIS JAIELA. Tentativa ' + attemptNumber + '/' + PROOF_MAX_ATTEMPTS + '. Data: ' + fd,
+                'error',
+                'fa-exclamation-triangle'
+              );
+            }
+            showErrorPopupWithButtons(
+              reason,
+              { amount: amount, fee: fee, attempt: attemptNumber, reason: reason }
+            );
+            if (attemptNumber >= PROOF_MAX_ATTEMPTS) {
+              setTimeout(function() { openSuspensionPanel(); }, 600);
+            }
+            _proofProcessing = false;
+            reject(new Error(reason));
+          }, 400);
         }
       }, 50);
     };
     reader.onerror = function() {
+      if (finished) return;
+      finished = true;
       clearTimeout(hardTimeout);
       loading.hide();
+      _proofProcessing = false;
       reject(new Error('Erro técnico ao ler o ficheiro. Não foi contabilizada tentativa.'));
     };
     reader.readAsDataURL(proofFile);
   });
-}
-
-function finalizeLoanRequest(amount, analysis) {
-  if (!currentUser) return;
-  const term = parseInt(simTerm.value, 10) || 6;
-  const fee = calcFee(amount);
-  const methodEl = document.querySelector('.pm-item.active');
-  const method = methodEl ? methodEl.dataset.method : 'M-Pesa';
-  const receiver = document.getElementById('loanReceiver').value.trim();
-  const loan = {
-    amount: amount,
-    term: term,
-    method: method,
-    receiver: receiver,
-    fee: fee,
-    status: 'pending',
-    date: new Date().toISOString(),
-    analysis: { width: analysis.w, height: analysis.h }
-  };
-  if (!currentUser.loans) currentUser.loans = [];
-  currentUser.loans.unshift(loan);
-  const i = users.findIndex(function(u) { return u.phone === currentUser.phone; });
-  if (i !== -1) users[i] = currentUser;
-  saveUsers();
-  sessionStorage.setItem('blackcash_session', JSON.stringify(currentUser));
-  updateHistory();
-
-  setProofAttempts(0);
-  refreshProofAttemptsUI();
-
-  addNotif(
-    currentUser,
-    '📄 Solicitação recebida',
-    'A sua solicitação de ' + amount.toLocaleString('pt-MZ') + ' MT foi registada. O comprovativo passou na análise local. Após confirmação do pagamento, receberá o empréstimo entre 8 e 30 minutos.',
-    'success',
-    'fa-file-signature'
-  );
-  showToast('Solicitação registada. A análise do comprovativo foi concluída com sucesso.', 'success');
-  setTimeout(function() { navigateTo('pageHistory'); }, 1400);
 }
 
 /* ========== LEMBRETE 10 MIN ========== */
@@ -3334,7 +3237,7 @@ if (currentUser) scheduleReminder10min();
 function getClientName() { return currentUser && currentUser.fullName ? currentUser.fullName : 'cliente'; }
 function buildAudioScript() {
   const name = getClientName();
-  return 'Saudações, ' + name + '. Seja bem-vindo à BLACK-CASH. Para solicitar o seu empréstimo, clique no botão Solicitar o seu empréstimo. Preencha todos os dados exigidos, incluindo a fotografia frontal e traseira do seu Bilhete de Identidade. Depois, escolha o valor do empréstimo. Os empréstimos começam a partir de cinco mil meticais e podem chegar até cem mil meticais. A taxa de inscrição é de quatrocentos e noventa e nove meticais para empréstimos até quarenta e nove mil meticais, e de novecentos e noventa e nove meticais para empréstimos de cinquenta mil a cem mil meticais. A taxa de inscrição é um pagamento separado e não é descontada do valor do empréstimo. Depois de pagar a taxa, envie a captura de ecrã da confirmação. A nossa inteligência artificial irá verificar a transferência. Se tudo estiver correto, receberá o seu empréstimo dentro de oito a trinta minutos. Boa solicitação, ' + name + '.';
+  return 'Saudações, ' + name + '. Seja bem-vindo à BLACK-CASH. Para solicitar o seu empréstimo, clique no botão Solicitar o seu empréstimo. Preencha todos os dados exigidos, incluindo a fotografia frontal e traseira do seu Bilhete de Identidade. Depois, escolha o valor do empréstimo. Os empréstimos começam a partir de cinco mil meticais e podem chegar até cem mil meticais. A taxa de inscrição é de quatrocentos e noventa e nove meticais para empréstimos até quarenta e nove mil meticais, e de novecentos e noventa e nove meticais para empréstimos de cinquenta mil a cem mil meticais. A taxa de inscrição é um pagamento separado e não é descontada do valor do empréstimo. Depois de pagar a taxa, envie a captura de ecrã da confirmação. A nossa inteligência artificial irá verificar a transferência. Se tudo estiver correto, receberá o seu empréstimo dentro de oito a trinta minutos. Boa solicitação, .';
 }
 const audioFab = document.getElementById('audioFab');
 function playAudioInstructions() {
@@ -3400,6 +3303,7 @@ if (currentUser) {
   updateNotifications();
   refreshProofAttemptsUI();
   checkAndShowSuspension();
+  renderRejectionCounter();
 }
 
 }); /* fim DOMContentLoaded */
